@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4A148C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #4A148C;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #0070c0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F3E5F5;
+    font-weight: bold;
+}
+
+.furniture {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.hero {
+    background-color: #F3E5F5;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    border-bottom: 1px solid #4A148C;
+}
+
+.hero-container {
+    max-width: 800px;
+    /* Center content and limit width */
+    margin: 0 auto;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #4A148C;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #4A148C;
+}
+
+.products {
+    background-color: #F3E5F5;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #4A148C;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4A148C;
+}
+
+.product-grid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 0 20px rgba(74, 20, 140);
+    /* Orange glow effect */
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+    /* Zoom effect */
+}
+
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-item h3 {
+    margin: 50px 0;
+    font-size: 16px;
+    color: #4A148C;
+}
+
+.product-item p {
+    margin: 50px 0;
+    font-size: 12px;
+    color: #4A148C;
+}
+
+.about {
+    background-color: #F3E5F5;
+    padding: 50px 20px;
+    border-bottom: 1px solid #4A148C;
+    text-align: center;
+}
+
+.about h2 {
+    color: #4A148C;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #4A148C;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    padding: 0 20px;
+}
+
+.contact {
+    background-color: #F3E5F5;
+    padding: 50px 20px;
+    border-bottom: 1px solid #4A148C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h2 {
+    color: #4A148C;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contact label {
+    color: #4A148C;
+    font-size: 16px;
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    background-color: #4A148C;
+    border: none;
+    display: block;
+    color: #F3E5F5;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #F3E5F5;
+    border: 1px solid #4A148C;
+    color: #4A148C;
+}
+
+footer {
+    background-color: #4A148C;
+    color: #F3E5F5;
+    padding: 20px;
+    text-align: center;
+}
