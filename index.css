@@ -226,3 +226,53 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-item {
+        width: calc(50% - 20px); /* 2 columns layout on tablets */
+    }
+
+    .blog-post {
+        width: calc(50% - 20px); /* 2 columns layout on tablets */
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .product-item, .blog-post {
+        width: 100%; /* 1 column layout on mobile */
+    }
+
+    .product-grid, .blog-posts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #categories ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
