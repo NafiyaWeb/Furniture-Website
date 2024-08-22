@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -12,7 +13,7 @@
     <header>
         <div class="logo">
             <div class="logo-background">
-                <span class="logo-letters">NS</span><span class="logo-text">Furniture</span>
+                <img src="https://img.freepik.com/premium-vector/furniture-label-isolated-white-background-design-element-vector-illustration_201926-1534.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" class="furniture-logo" />
             </div>
         </div>
         <nav>
@@ -20,75 +21,1561 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#openContactForm">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-container">
-            <h2>Discover a range of home furnishings that blend functionality with modern design</h2>
-            <p>Your one-stop shop for modern furniture.</p>
+            <div class="hero-overlay">
+                <h2>Discover a range of home furnishings that blend functionality with modern design</h2>
+                <p>Your one-stop shop for modern furniture.</p>
+            </div>
+    </section>
+
+    <section class="categories" id="products">
+        <h2>Product Categories</h2>
+        <div class="category-buttons">
+            <button onclick="filterProducts('kitchen')">Kitchen</button>
+            <button onclick="filterProducts('bedroom')">Bedroom</button>
+            <button onclick="filterProducts('livingroom')">Living Room</button>
+            <button onclick="filterProducts('decoration')">Decoration</button>
+            <button onclick="filterProducts('lighting')">Lighting</button>
+            <button onclick="filterProducts('homeelectronics')">Home Electronics</button>
+            <button onclick="filterProducts('bathroom')">Bathroom</button>
+            <button onclick="filterProducts('all')">All</button>
         </div>
     </section>
 
-    <section id="products" class="products">
-        <h2>Our Products</h2>
+    <section class="product-section">
         <div class="product-grid">
-            <div class="product-item">
-                <img src="https://img.freepik.com/free-photo/contemporary-living-room-interior-design-with-white-sofa_53876-126774.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" alt="Sofa">
-                <h3>Comfortable Sofa</h3>
-                <p>₹25,000</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/vardagen-pot-with-lid-enamelled-cast-iron-matt-black__1196089_pe902746_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>VARDAGEN</h3>
+                    <h5>Pot with lid, enamelled cast iron matt/black, 5 l (5.3 qt)</h5>
+                    <p class="price">Rs.4,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://img.freepik.com/premium-photo/book-shelf-with-many-books-it-book-shelf-with-bookcase-center_1212440-15957.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" alt="Chair">
-                <h3>Book shelves</h3>
-                <p>₹14,000</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/avsteg-kitchen-countertop-organiser-bamboo-white__0982298_pe815609_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>AVSTEG</h3>
+                    <h5>Kitchen countertop organiser, bamboo/white, 40x21 cm (15 ¾x8 ¼ ")</h5>
+                    <p class="price">Rs.1,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://img.freepik.com/premium-photo/3d-modern-wooden-dining-chair-isolated-white_1038422-6630.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" alt="Chair">
-                <h3>Stylish Chair</h3>
-                <p>₹2500</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/gladelig-bowl-blue__0986371_pe817075_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>GLADELIG</h3>
+                    <h5>Bowl, blue, 14 cm (5 ½ ")</h5>
+                    <p class="price">Rs.1,090/4 pack</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+                    <p class="colors">Available Colors: Blue, Grey</p>
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://www.ikea.com/in/en/images/products/vilhatten-wardrobe-with-2-doors-and-2-drawers-oak-effect__1163151_pe890132_s5.jpg?f=xxs" alt="Chair">
-                <h3>wardrobe for clothes</h3>
-                <p>₹12,000</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/ordning-kitchen-utensil-rack-stainless-steel__0711105_pe727961_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>ORDNING</h3>
+                    <h5>Kitchen utensil rack, stainless steel, 18 cm (7 1/8 ")</h5>
+                    <p class="price">Rs.399</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://img.freepik.com/premium-photo/school-desk-with-globe-books_923894-49594.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" alt="Table">
-                <h3>Study Table</h3>
-                <p>₹8,000</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/ikea-365-food-container-square-plastic__0783560_pe761532_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HAMLAGAD</h3>
+                    <h5>Food container, square/plastic, 750 ml (25 oz)</h5>
+                    <p class="price">Rs.499/3 pack</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://img.freepik.com/premium-photo/lamp-with-plant-it-sits-table-potted-plant_992212-213916.jpg?ga=GA1.1.1283329644.1644313660&semt=ais_hybrid" alt="Chair">
-                <h3>Table Lamp</h3>
-                <p>₹2000</p>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/lyckad-oven-serving-dish-set-of-2-dark-grey__0916171_pe785011_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>LYCKAD</h3>
+                    <h5>Oven/serving dish set of 2, dark grey</h5>
+                    <p class="price">Rs.1,190</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
             </div>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/grilla-grill-pan-black__18799_pe103964_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>GRILLA</h3>
+                    <h5>Grill pan, black, 36x26 cm (14 ¼x10 ¼ ")</h5>
+                    <p class="price">Rs.1,490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/kavalkad-saucepan-set-of-3-black__81256_pe205898_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>KAVALKAD</h3>
+                    <h5>Saucepan, set of 3, black</h5>
+                    <p class="price">Rs.1,390</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/fullaendad-5-piece-kitchen-utensil-set-grey__0711751_pe728440_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>FULLANDAD</h3>
+                    <h5>5-piece kitchen utensil set, grey</h5>
+                    <p class="price">Rs.399</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card kitchen">
+                <img src="https://www.ikea.com/in/en/images/products/vardagen-grater-with-handle__0713027_pe729206_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>VARDAGEN</h3>
+                    <h5>Grater with handle</h5>
+                    <p class="price">Rs.199</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/songesand-bed-frame-with-2-storage-boxes-brown-loenset__1151018_pe884725_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SONGESAND </h3>
+                    <h5>Bed frame with 2 storage boxes, 180x200 cm (70 7/8x78 3/4)</h5>
+                    <p class="price">Price: $25</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/malm-chest-of-3-drawers-black-brown__0484870_pe621337_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>MALM</h3>
+                    <h5>Chest of 3 drawers, 80x78 cm (31 1/2x30 3/4 ")</h5>
+                    <p class="price">Price: $25</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/blakullen-uph-bed-frame-with-corner-headboard-knisa-medium-blue__0995498_pe821743_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BLAKULLEN</h3>
+                    <h5>Uph bed frame with corner headboard, 90x200 cm (35 3/8x78 3/4 ")</h5>
+                    <p class="price">Price: $25</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige-luroey__1258172_pe927371_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SONGESAND</h3>
+                    <h5>Bed frame, 160x200 cm (63x78 3/4 ")</h5>
+                    <p class="price">Price: 18, 990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/songesand-bedroom-furniture-set-of-5-brown__1101651_pe866465_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SONGESAND</h3>
+                    <h5>Bedroom furniture, set of 5, 160x200 cm (63x78 3/4 ")</h5>
+                    <p class="price">Price: $25</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/akerjordfly-flat-sheet-and-2-pillowcase-blue__1217961_pe913114_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>AKERJORDFLY</h3>
+                    <h5>Flat sheet and 2 pillowcase, 240x260/50x80 cm (94x102/20x31 ")</h5>
+                    <p class="price">Price: 1390</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/nattjasmin-sheet-light-beige__0661405_pe711750_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>NATTJASMIN</h3>
+                    <h5>Sheet, 240x260 cm (94x102 ")</h5>
+                    <p class="price">Price: 1290</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/olderdalen-bedside-table-grey-green-pine__1064144_pe851507_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>OLDERDALEN</h3>
+                    <h5>Bedside table, 47x43 cm (18 1/2x16 7/8 ")</h5>
+                    <p class="price">Price: 9,900</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/idanaes-upholstered-ottoman-bed-gunnared-dark-grey__1012432_pe829085_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>IDANAS</h3>
+                    <h5>Upholstered ottoman bed, Gunnared dark grey, 180x200 cm (70 7/8x78 3/4 ")</h5>
+                    <p class="price">Price: 52,900</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+                    <p class="colors">Available Colors: Dark Gray, Pale Pink</p>
+                </div>
+            </div>
+            <div class="product-card bedroom">
+                <img src="https://www.ikea.com/in/en/images/products/hemnes-day-bed-frame-with-3-drawers-white__1180454_pe896328_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HEMNES</h3>
+                    <h5>Day-bed frame with 3 drawers, white, 80x200 cm (31 1/2x78 3/4 ")</h5>
+                    <p class="price">Rs. 34,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+                    <p class="colors">Available Colors: Gray, White, Yellow</p>
+                </div>
+            </div>
+
+
+
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-burhult-tv-storage-combination-white__0943475_pe796943_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BRIMNES</h3>
+                    <h5>BURHULT TV storage combination, 258x41x190 cm (101 5/8x16 1/8x74 3/4 ")</h5>
+                    <p class="price">Price: 26, 568</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-cabinet-with-doors-glass-black__0621549_pe689983_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BRIMNES</h3>
+                    <h5> Cabinet with doors, 78x95 cm (30 3/4x37 3/8 ")</h5>
+                    <p class="price">Price: 9, 490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-glass-door-cabinet-white__0601759_pe681618_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BRIMNES</h3>
+                    <h5> Glass-door cabinet, 80x190 cm (31 1/2x74 3/4 ")</h5>
+                    <p class="price">Price: 14, 990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-tv-storage-combination-black__0724176_pe734353_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BRIMNES</h3>
+                    <h5> TV storage combination, 200x41x95 cm (78 3/4x16 1/8x37 3/8 ")</h5>
+                    <p class="price">Price: 15, 980</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/hauga-storage-combination-beige__1005463_pe825417_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HAUGA</h3>
+                    <h5> Storage combination, 244x46x116 cm (96 1/8x18 1/8x45 5/8 ")</h5>
+                    <p class="price">Price: 38,970</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/trensum-mirror-stainless-steel__0637644_pe698434_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>TRENSUM</h3>
+                    <h5> Mirror</h5>
+                    <p class="price">Price: 349</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/hauga-tv-bench-beige__0949272_pe799595_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HAUGA</h3>
+                    <h5> TV bench, 138x36x54 cm (54 3/8x14 1/8x21 1/4 ")</h5>
+                    <p class="price">Price: 11,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/skubb-box-set-of-6-dark-grey__1188856_pe899592_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SKUBB</h3>
+                    <h5>Box, set of 6</h5>
+                    <p class="price">Price: 697</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/havsta-storage-combination-w-glass-doors-dark-brown__0720159_pe732457_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HAVSTA</h3>
+                    <h5>Storage combination w glass doors, dark brown, 162x37x134 cm (63 3/4x14 5/8x52 3/4 ")</h5>
+                    <p class="price">Rs.49,900</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card livingroom">
+                <img src="https://www.ikea.com/in/en/images/products/skruvby-sideboard-black-blue__1241238_pe919728_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SKRUVBY</h3>
+                    <h5>Sideboard, black-blue, 120x38x90 cm (47 1/4x14 3/4x35 3/8 ")</h5>
+                    <p class="price">Rs.12,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/bjoerksta-picture-with-frame-water-lilies-ii-aluminium-colour__0921128_pe787680_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BJORKSTA</h3>
+                    <h5>Picture with frame, Water Lilies II/aluminium-colour, 118x78 cm (46 ½x30 ¾ ")</h5>
+                    <p class="price">Rs.2,980</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/knoppaeng-frame-with-poster-set-of-8-flower-market__1202273_pe905849_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>KNOPPANG</h3>
+                    <h5>Frame with poster, set of 8, flower market</h5>
+                    <p class="price">Rs.3,490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/groenby-picture-set-of-9-blue-landscape__0671717_pe716332_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>GRONBY</h3>
+                    <h5>Picture, set of 9, blue landscape, 179x112 cm (70 ½x44 ")</h5>
+                    <p class="price">Rs.4,490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/yllevad-art-card-flowers-blooming__1237312_pe917914_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>YLLEVAD</h3>
+                    <h5>Art card, flowers-blooming, 10x15 cm (4x6 ")</h5>
+                    <p class="price">Rs.199/4 pack</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/haengalm-hanging-tapestry-beige-black-light-lilac-blue__1115789_pe872252_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HANGALM</h3>
+                    <h5>Hanging tapestry, beige black/light lilac-blue, 85x60 cm (33 1/2x23 5/8 ")</h5>
+                    <p class="price">Rs.3,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/raeffelbjoerk-vase-mother-of-pearl-colour__1115542_pe872277_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>RAFFELBJOR</h3>
+                    <h5>Vase, mother-of-pearl colour, 12 cm (4 ¾ ")</h5>
+                    <p class="price">Rs.1,290</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/sannolik-vase-pink__0369472_pe551158_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SANNOLIK</h3>
+                    <h5>Vase, pink, 17 cm (6 ¾ ")</h5>
+                    <p class="price">Rs.499</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/smycka-artificial-bouquet-in-outdoor-poppy__1248048_pe922958_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SMYCKA</h3>
+                    <h5>Artificial bouquet, in/outdoor/Poppy, 48 cm (19 ")</h5>
+                    <p class="price">Rs.799</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/fejka-artificial-plant-with-wall-holder-in-outdoor-green-lilac__1184665_pe898020_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SMYCKA</h3>
+                    <h5>Artificial plant with wall holder, in/outdoor/green/lilac</h5>
+                    <p class="price">Rs.499</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card decoration">
+                <img src="https://www.ikea.com/in/en/images/products/vinterfint-decoration-bauble-set-of-32-blue-mixed-colours__1092033_pe862643_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>VINTERFINT</h3>
+                    <h5>Decoration bauble, set of 32, blue/mixed colours</h5>
+                    <p class="price">Rs.999</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/solvinden-led-solar-powered-pendant-lamp-outdoor-globe-light-blue__1029509_pe835870_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SOLVINDEN</h3>
+                    <h5>LED solar-powered pendant lamp, outdoor/globe light blue, 22 cm (9 ")</h5>
+                    <p class="price">Rs. 499</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/kvart-work-lamp-black__0610459_pe685518_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>KVART</h3>
+                    <h5> Work lamp</h5>
+                    <p class="price">Price: 899</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/solvinden-led-solar-powered-floor-lamp-beige-stripe__1029659_pe835981_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SOLVINDEN</h3>
+                    <h5>LED solar-powered floor lamp, beige/stripe, 42 cm (17 ")</h5>
+                    <p class="price">Rs. 1,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/askmuller-table-lamp-white__1074321_pe856155_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>ASKMULLER</h3>
+                    <h5> Table lamp, 24 cm (9 ")</h5>
+                    <p class="price">Price: 1790</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/hoegvind-pendant-lamp-with-3-lamps-nickel-plated-grey-glass__1045903_pe842765_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HOGVIND</h3>
+                    <h5> Pendant lamp with 3 lamps, 41 cm (16 ")</h5>
+                    <p class="price">Price: 8990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/fyrtiofyra-pendant-lamp-chrome-effect-white__1161912_pe889572_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>FYRTIOFYRA</h3>
+                    <h5> Pendant lamp, 38 cm (15 ")</h5>
+                    <p class="price">Price: 999</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/solklint-pendant-lamp-brass-grey-clear-glass__0842306_pe778948_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SOLKLINT</h3>
+                    <h5> Pendant lamp, 22 cm (9 ")</h5>
+                    <p class="price">Price: 2490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/tertial-work-lamp-dark-grey__0609306_pe684440_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>TERTIAL</h3>
+                    <h5> Work lamp</h5>
+                    <p class="price">Price: 1290</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/lagergang-led-lamp-for-screen-dimmable-turquoise__1166865_pe891302_s5.jpg?f=xxs" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>LAGERGANG</h3>
+                    <h5>LED lamp for screen, dimmable/turquoise</h5>
+                    <p class="price">Price: 1490</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card lighting">
+                <img src="https://www.ikea.com/in/en/images/products/staenkregn-led-ring-lamp-dimmable-turquoise__1119273_pe873447_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SOLKLINT</h3>
+                    <h5>LED ring lamp, dimmable/turquoise</h5>
+                    <p class="price">Price: 999</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/anpassa-extractor-hood-stainless-steel__0755610_pe748488_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3> ANPASSA</h3>
+                    <h5>Extractor hood, stainless steel</h5>
+                    <p class="price">Price: 15,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/anraetta-forced-air-oven-ikea-500-stainless-steel__0754876_pe748158_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>ANRATTA</h3>
+                    <h5>Forced air oven, IKEA 500 stainless steel</h5>
+                    <p class="price">Price: 43,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/foerbraenna-gas-hob-black__0781353_pe760702_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>FÖRBRÄNNA </h3>
+                    <h5>Gas hob, black, 60 cm (23 5/8 ")</h5>
+                    <p class="price">Rs.12,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/starkvind-table-with-air-purifier-additional-gas-filter-stained-oak-veneer-white__1052011_pe845876_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>STARKVIND</h3>
+                    <h5>Table with air purifier, additional gas filter stained oak veneer/white</h5>
+                    <p class="price">Rs.16,980</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/symfonisk-wi-fi-bookshelf-speakers-white-set-of-2-gen-2__1168832_pe892260_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SYMFONISK</h3>
+                    <h5>Wi-Fi bookshelf speakers, white/set of 2 gen 2</h5>
+                    <p class="price">Rs.23,980</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/bettorp-led-mobile-lamp-w-wireless-charging-dimmable-light-grey-blue__0970636_pe811143_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BETTORP</h3>
+                    <h5>LED mobile lamp w wireless charging, dimmable light grey-blue</h5>
+                    <p class="price">Rs.4,990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/symfonisk-sound-remote-gen-2__1112597_pe871228_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>SYMFONISK</h3>
+                    <h5>Sound remote, gen 2</h5>
+                    <p class="price">Rs.1000</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/loerby-usb-charger-with-clamp-white__0548169_pe656999_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>LORBY</h3>
+                    <h5>USB charger with clamp, white</h5>
+                    <p class="price">Rs.1,290</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/tillreda-brackets-for-microwave-oven__0237340_pe376720_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>TILLREDA</h3>
+                    <h5>Brackets for microwave oven</h5>
+                    <p class="price">Rs.1,290</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card homeelectronics">
+                <img src="https://www.ikea.com/in/en/images/products/lagan-integrated-dishwasher__0854669_pe780720_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>LAGAN</h3>
+                    <h5>Integrated dishwasher, 60 cm (23 1/2 ")</h5>
+                    <p class="price">Rs.42, 990</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/bjoerkan-wash-basin-w-water-trap-mixer-tap-white__0998326_pe823006_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BJORKÅN</h3>
+                    <h5>Wash-basin w water trap/mixer tap, white, 54x40 cm (21 1/4x15 3/4 ")</h5>
+                    <p class="price">Rs.8,850</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/hoelass-bin-with-lid-black__1094944_pe863684_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>HOLLAS</h3>
+                    <h5>Bin with lid, black, 8 l (2 gallon)</h5>
+                    <p class="price">Rs.299</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/jaell-laundry-bag-with-stand-white__1195672_pe902553_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>JALL</h3>
+                    <h5>Laundry bag with stand, white, 50 l (13 gallon)</h5>
+                    <p class="price">Rs.299</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/storavan-3-piece-bathroom-set-white__0833216_pe777987_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>STORAVAN</h3>
+                    <h5>3-piece bathroom set, white</h5>
+                    <p class="price">Rs.199</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/enhet-tvaellen-wash-stand-with-2-drawers-white-pilkan-tap__0831411_pe777139_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>ENHET / TVÄLLEN</h3>
+                    <h5>Wash-stand with 2 drawers, white/Pilkån tap, 44x43x65 cm (17 3/8x16 7/8x25 5/8 ")</h5>
+                    <p class="price">Rs.18,150</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/balungen-towel-holder-chrome-plated__0710451_pe727568_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>BALUNGEN</h3>
+                    <h5>Towel holder, chrome-plated, 24 cm (9 1/4 ")</h5>
+                    <p class="price">Rs.899</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/tisken-corner-shelf-unit-with-suction-cup-white__0749053_pe745417_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>TISKEN</h3>
+                    <h5>Corner shelf unit with suction cup, white</h5>
+                    <p class="price">Rs.349</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/krokfjorden-shower-hanger-two-tiers-zinc-plated__0964273_pe808960_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>KROKFJORDEN</h3>
+                    <h5>Shower hanger, two tiers, zinc plated, 24x53 cm (9 ½x20 ¾ ")</h5>
+                    <p class="price">Rs.899</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/tisken-toothbrush-holder-with-suction-cup-white__0749031_pe745404_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>TISKEN</h3>
+                    <h5>Toothbrush holder with suction cup, white</h5>
+                    <p class="price">Rs.199</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card bathroom">
+                <img src="https://www.ikea.com/in/en/images/products/lillnaggen-squeegee-black__0635169_pe697023_s5.jpg?f=xl" alt="Kitchen Product 1">
+                <div class="product-details">
+                    <h3>LILLNAGGEN</h3>
+                    <h5>Squeegee, black</h5>
+                    <p class="price">Rs.99</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <div class="product-icons">
+                        <i class="fas fa-solid fa-cart-shopping" title="Rating: 4.0"></i>
+                        <i class="fas fa-solid fa-heart" title="Available Colors"></i>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Add more products with appropriate category classes -->
         </div>
     </section>
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>We offer a wide range of well-designed, functional home furnishing products at affordable prices. We are passionate about creating beautiful, functional spaces where you can create lasting memories with family and friends. Whether you're renovating your home or starting from scratch, our diverse range of products caters to all tastes and budgets.</p>
+        <p>Welcome to, your premier destination for modern and stylish home furnishings. Since our inception, we have been dedicated to transforming living spaces into beautiful, functional environments. Our mission is to provide high-quality, affordable furniture that enhances your home and enriches your life.</p>
+
+        <p>Our extensive collection includes everything from sleek and contemporary designs to classic and timeless pieces, catering to a wide range of tastes and preferences. We pride ourselves on sourcing the finest materials and craftsmanship, ensuring that every item not only looks great but also stands the test of time.</p>
+
+        <p>At our Furniture, we believe that everyone deserves a home that reflects their personality and meets their needs. Whether you’re looking to revamp a single room or furnish your entire home, our friendly and knowledgeable team is here to guide you every step of the way. We are committed to offering personalized service and expert advice to help you find the perfect pieces for your space.</p>
+
+        <p>Join us on our journey to create beautiful, functional living spaces. Explore our collection, get inspired, and let us help you turn your vision into reality. Thank you for choosing our Furniture – where style meets comfort.</p>
+
+        <div class="about-us-cta">
+            <h3>Connect with Us</h3>
+            <p>Stay updated with our latest arrivals, exclusive offers, and design tips by following us on social media.</p>
+            <ul>
+                <li><a>Facebook</a></li>
+                <li><a>Twitter</a></li>
+                <li><a>Instagram</a></li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" class="form-control">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="form-control">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-card">
+            <div class="review-header">
+                <h3>John Doe</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+            <p>"I love the quality and design of the furniture. It has completely transformed my living space. Highly recommended!"</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h3>John Smith</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <p>"Excellent service and top-notch products. The delivery was on time and the furniture was exactly as described."</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Emily Johnson</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+            <p>"Good quality furniture but a bit expensive. Overall, a good shopping experience."</p>
+        </div>
     </section>
+
+    <!-- Wrapper for the button -->
+    <div id="openContactForm" class="btn-container">
+        <button class="contact-btn">Contact Us</button>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-container">
-            <p>&copy; 2024 <strong>NsFurnitureStore</strong>. All rights reserved. We strive to provide the best home furniture solutions to meet your needs. If you have any questions or need assistance, feel free to reach out to us at <a href="mailto:contact@nsfurniturestore.com">contact@nsfurniturestore.com</a>. Stay connected with us on <a href="https://facebook.com/NsFurnitureStore">Facebook</a>, <a href="https://twitter.com/NsFurnitureStore">Twitter</a>, and <a href="https://instagram.com/NsFurnitureStore">Instagram</a> for the latest updates and special offers. Your satisfaction is our priority!</p>
+            <p>&copy; 2024. All rights reserved. We strive to provide the best home furniture solutions to meet your needs. If you have any questions or need assistance, feel free to reach out to us at <a>contact@furniturestore.com</a>. Stay connected with us on <a>Facebook</a>, <a>Twitter</a>, and <a>Instagram</a> for the latest updates and special offers. Your satisfaction is our priority!</p>
         </div>
     </footer>
 
