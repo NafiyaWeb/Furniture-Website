@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Set default category to "kitchen" on page load
+    filterProducts('kitchen');
+});
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 });
@@ -13,6 +18,7 @@ function filterProducts(category) {
         }
     });
 }
+
 // Get the modal, button, and close element
 const modal = document.getElementById("contactModal");
 const btn = document.getElementById("openContactForm");
