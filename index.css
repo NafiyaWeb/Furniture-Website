@@ -195,12 +195,15 @@ body {
     text-align: center;
     display: none;
     /* Initially hide all products */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .product-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optionally, increase shadow for effect */
     /*transform: rotateY(15deg) rotateX(15deg);
     transition: transform 0.3s ease;*/
-    box-shadow: 0 0 20px rgba(0, 51, 102);
+    /*box-shadow: 0 0 20px rgba(0, 51, 102);*/
     /* #003366 glow effect */
 }
 
